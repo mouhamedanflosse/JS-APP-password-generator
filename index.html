@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS APP password generator</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>password generator</header>
+      <div class="wrapper">
+        <div class="input-field">
+          <input type="text" value="djdfdmf(DDJF/=DK" disabled />
+          <i class="fa fa-copy"></i>
+        </div>
+        <div class="progress">
+          <span></span>
+        </div>
+        <div class="psd-length">
+          <div class="label">
+            <span>password length</span>
+            <span class="counter">15</span>
+          </div>
+          <input type="range" value="15" max="30" min="1" step="1" />
+        </div>
+        <div class="psd-settings">
+          <label for="">password settings</label>
+          <div class="options">
+            <li class="opt">
+              <input type="checkbox" id="lowercase" checked />
+              <label for="">lowercase(a-z)</label>
+            </li>
+            <li class="opt">
+              <input type="checkbox" id="uppercase" />
+              <label for="">uppercase(A-Z)</label>
+            </li>
+            <li class="opt">
+              <input type="checkbox" id="numbers" />
+              <label for="">numbers(0-9)</label>
+            </li>
+            <li class="opt">
+              <input type="checkbox" id="symbols" />
+              <label for="">symbols(&§/)</label>
+            </li>
+            <li class="opt">
+              <input type="checkbox" id="spaces" />
+              <label for="">Include sapaces</label>
+            </li>
+            <li class="opt">
+              <input type="checkbox" id="exc-duplicate" />
+              <label for="">Exclude Duplicate</label>
+            </li>
+          </div>
+        </div>
+        <button>Generate password</button>
+      </div>
+    </div>
+    <script src="master.js"></script>
+  </body>
+</html>
